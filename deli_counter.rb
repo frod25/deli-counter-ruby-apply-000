@@ -14,9 +14,9 @@ def line(line_array)
 end
 
 def take_a_number(current_line, name)
-    current_line.push("#{name}")
-    position = current_line.find_index(name) + 1
-    puts "Welcome, #{name}. You are number #{position} in line."
+  current_line.push(name)
+  position = current_line.length
+  puts "Welcome, #{name}. You are number #{position} in line."
 end
 
 def now_serving(deli_line)
