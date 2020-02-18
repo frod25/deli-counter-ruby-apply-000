@@ -1,5 +1,3 @@
-katz_deli = []
-
 def line(line_array)
   if line_array == []
     puts "The line is currently empty."
