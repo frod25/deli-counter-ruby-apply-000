@@ -14,14 +14,9 @@ def line(line_array)
 end
 
 def take_a_number(current_line, name)
-  if current_line == []
-    current_line.push("#{name}")
-    puts "Welcome, #{name}. You are number 1 in line."
-  else
     current_line.push("#{name}")
     position = current_line.find_index(name) + 1
     puts "Welcome, #{name}. You are number #{position} in line."
-  end
 end
 
 def now_serving(deli_line)
