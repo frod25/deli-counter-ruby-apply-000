@@ -18,10 +18,6 @@ def take_a_number(current_line, name)
 end
 
 def now_serving(deli_line)
-  if deli_line == []
-    puts "There is nobody waiting to be served!"
-  else
-    puts "Currently serving #{deli_line[0]}."
-    deli_line.shift
-  end
+  deli_line == [] ? puts "There is nobody waiting to be served!" : puts "Currently serving #{deli_line[0]}."
+  deli_line.shift
 end
