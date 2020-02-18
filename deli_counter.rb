@@ -19,5 +19,5 @@ end
 
 def now_serving(deli_line)
   deli_line == [] ? puts "There is nobody waiting to be served!" : puts "Currently serving #{deli_line[0]}."
-
+  deli_line.shift
 end
